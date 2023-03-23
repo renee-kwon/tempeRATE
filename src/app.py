@@ -133,8 +133,8 @@ def update_map(selected_month):
                Input("state-dropdown", "value")])
 
 def update_figure(selected_month, selected_state):
-  weather_filtered = weather[weather.month == selected_month]
-  weather_filtered = weather_filtered[weather_filtered.state == selected_state + 1]
+  weather_filtered = weather[weather.month == selected_month + 1]
+  weather_filtered = weather_filtered[weather_filtered.state == selected_state]
 
   fig = px.strip(weather_filtered, 
                  x='city', 
