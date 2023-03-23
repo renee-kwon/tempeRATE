@@ -43,7 +43,7 @@ app.layout = dbc.Container([
                           "font-weight": "bold",
                           'marginTop': 30}),
         html.Div([
-        dcc.Slider(1, 12, 12, value=1, 
+        dcc.Slider(0, 12, 12, value=1, 
                    id="month_slider",
                marks=
           {(i):{'label':str(months[i]),
@@ -96,7 +96,7 @@ app.layout = dbc.Container([
 
 def update_map(selected_month):
     heatmap_data = weather.groupby(['state', 'month'])[['temp_c', 'temp_f']].mean().reset_index()
-    heatmap_data = heatmap_data[(heatmap_data.month == selected_month)]
+    heatmap_data = heatmap_data[(heatmap_data.month == selected_month + 1)]
 
     fig = px.choropleth(
         heatmap_data,
@@ -134,7 +134,7 @@ def update_map(selected_month):
 
 def update_figure(selected_month, selected_state):
   weather_filtered = weather[weather.month == selected_month]
-  weather_filtered = weather_filtered[weather_filtered.state == selected_state]
+  weather_filtered = weather_filtered[weather_filtered.state == selected_state + 1]
 
   fig = px.strip(weather_filtered, 
                  x='city', 
