@@ -13,7 +13,8 @@ text_col = '#9c179e'
 title_style = 'verdana'
 
 # Load the data and wrangle
-weather = pd.read_csv("../github/data/weather.csv", usecols = ["month", "state", "city", "high_or_low", "temp_c", "temp_f", "date"])
+weather = pd.read_csv("../data/weather.csv", 
+                      usecols = ["month", "state", "city", "high_or_low", "temp_c", "temp_f", "date"])
 weather = weather.dropna()
 weather = weather[weather["high_or_low"]=="high"]
 weather['date'] = pd.to_datetime(weather['date'])
