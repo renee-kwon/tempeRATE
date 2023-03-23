@@ -76,7 +76,7 @@ app.layout = dbc.Container([
     html.Br(),
     html.Label("Heatmap of Monthly Average High Temperature", 
                style = {"font-weight": "bold"}),
-    html.Div(dcc.Graph(id="heatmap", style={'display': 'inline-block'}))
+    html.Div(dcc.Graph(id="heatmap"))
     ])
    ]),
     # ROW 2
