@@ -80,12 +80,13 @@ app.layout = dbc.Container([
     ])
    ]),
     # ROW 2
-    dbc.Row([dbc.Col([
-    html.Label("Observed Temperatures by City", 
-               style = {"font-weight": "bold"}),    
-    dcc.Graph(id="violin", style={'display': 'inline-block'}, 
-              )]),
-     ]),
+    dbc.Row([
+    html.Label("Observed Temperatures by City", style = {"font-weight": "bold"}),    
+    dcc.Graph(id="violin", style={'display': 'block'}), 
+        ], 
+        style={'display': 'block'}),
+    html.Br(),
+    html.Br()
 ],
      className="container",
     style={'backgroundColor': bg_col})
