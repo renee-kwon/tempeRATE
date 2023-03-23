@@ -31,6 +31,8 @@ Users can select a `month` they plan to travel and from this selection, an inter
 
 Next, after monthly averages have been compared, users can choose the US state of their interest and a strip plot will display the daily recorded temperature highs for the month they selected and in each city of their selected state. 
 
+<img src='img/temp_1.gif'>
+
 ## Mini-persona
 
 Anne is a resident of the Northwest Territories who dreams of ditching her parka and her toque to spend her next US vacation in September on a beach in the warmest city she can find! With TempeRATE, she observes Nevada has high temperatures for the month of September but what city should she go to? She observes the daily temperature records and settles on Las Vegas as her destination and also observes a visit early to mid-month will give her the best suntanning, margarita-sipping weather.  
