@@ -140,7 +140,7 @@ def update_figure(selected_month, selected_state):
                  x='city', 
                  y='temp_c', 
                  custom_data=['date_full', 'temp_f', 'city'],
-                 width=1000, height=300)
+                 width=1000, height=400)
   
   fig.update_traces(hovertemplate="<br>".join([
     "Observed Date: %{customdata[0]}",
@@ -150,8 +150,6 @@ def update_figure(selected_month, selected_state):
     marker=dict(color= title_font))
 
   fig.update_layout(showlegend=False,
-                    width=1300,
-                    height=450,
                     paper_bgcolor='rgba(0,0,0,0)',
                     plot_bgcolor='rgba(0,0,0,0)',
                     margin={"r":0,"t":0,"l":0,"b":0},
