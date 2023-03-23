@@ -26,11 +26,11 @@ The proposal is shared with Group 3's citytemp project and can be found [here](h
 
 ## Preview and Description
 
-"When do you want to go?"
+**"When do you want to go?"**
 
 Users can select a month they plan to travel and from this selection, an interactive heatmap will display monthly temperature levels. The map is coloured according to degrees celsius units, but users can also hover over the state of their interest to view temperature levels in degrees Fahrenheit and the exact recorded monthly mean temperature. 
 
-"Where do you want to go?"
+**"Where do you want to go?"**
 
 Next, after monthly averages have been compared, users can choose the US state of their interest and a strip plot will display the daily recorded temperature highs for the month they selected and in each city of their selected state. 
 
