@@ -49,7 +49,7 @@ app.layout = dbc.Container([
           {(i):{'label':str(months[i]),
                 'style':{'color':'black',
                          'writing-mode': 'vertical-rl',
-                         'text-orientation': 'use-glyph-orientation'}} for i in range(1, 13)})
+                         'text-orientation': 'use-glyph-orientation'}} for i in range(0, 12)})
         ],
                 style ={'color': 'black', 
                         'fontSize': 70,
