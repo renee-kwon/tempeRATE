@@ -141,7 +141,7 @@ def update_figure(selected_month, selected_state):
                  x='city', 
                  y='temp_c', 
                  custom_data=['date_full', 'temp_f', 'city'],
-                 width=1000, height=400)
+                 width=1300, height=400)
   
   fig.update_traces(hovertemplate="<br>".join([
     "Observed Date: %{customdata[0]}",
