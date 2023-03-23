@@ -6,7 +6,7 @@ Welcome! Thank you for visiting the tempeRATE project repository.
 
 If you're an avid traveller and you want to find the perfect warm getaway for your next vacation, tempeRATE is for you!
 
-Click here to use TempeRATE
+[Click here to use TempeRATE.](https://temperate.onrender.com/)
 
 To learn more about the app, you can jump to one of the sections below or keep scrolling.
 
